@@ -49,7 +49,7 @@ class Movie
     # fees_only = fees_array
   end
 
-  def pay_fees
+  def budget_after_paying_fees
     castings = self.find_castings_by_movie
     casting_fees = castings.map { |casting| casting.fee}
     total_fees_paid = casting_fees.reduce(:+) # (:+) is a quick way to sum the numbers, and I have used it instead of a block

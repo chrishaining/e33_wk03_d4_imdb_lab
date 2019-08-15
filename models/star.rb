@@ -48,7 +48,7 @@ class Star
     # fees_only = fees_array
   end
 
-  def receive_fees
+  def income_after_receiving_fees
     star_castings = self.find_castings_by_star
     star_casting_fees = star_castings.map { |casting| casting.fee}
     total_fees_received = star_casting_fees.reduce(:+) # (:+) is a quick way to sum the numbers, and I have used it instead of a block
