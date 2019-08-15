@@ -10,13 +10,15 @@ Casting.delete_all
 
 movie1 = Movie.new({
   'title' => 'Forest Gump',
-  'genre' => 'Comedy'
+  'genre' => 'Comedy',
+  'budget' => 20_000_000
 })
 movie1.save
 
 movie2 = Movie.new({
   'title' => 'California Typewriter',
-  'genre' => 'Documentary'
+  'genre' => 'Documentary',
+  'budget' => 12_000_000
 })
 movie2.save
 
