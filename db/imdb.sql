@@ -12,7 +12,8 @@ CREATE TABLE movies (
 CREATE TABLE stars (
   id SERIAL4 PRIMARY KEY,
   forename VARCHAR(255),
-  surname VARCHAR(255)
+  surname VARCHAR(255),
+  income INT8
 );
 
 CREATE TABLE castings (
